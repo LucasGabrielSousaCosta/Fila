@@ -107,39 +107,8 @@ public class Fila {
         {
             if(temp.item == item)
                 return true;
+            temp = temp.next;
         }
         return false;
-    }
-
-    //return first.item -- para o peek(), caso não esteja vazia
-    //if first == null && last == null
-    //first = firts.next() -- apagar um elemento
-    //first = last = null -- apagar o unico elemento
-    //Node no = new Node()
-    //clear chamar até acabar, usar while e iterator do nome
-    //countais iterators aponta para o primeiro nó, e compara com o item, faz iterator = iterator.next()
-
-    public Node getFirst() {
-        return first;
-    }
-
-    public void setFirst(Node first) {
-        this.first = first;
-    }
-
-    //public void getLast() {
-    //    System.out.print(first.next);
-   // }
-
-    public void setLast(Node last) {
-        this.last = last;
-    }
-
-    public int getN() {
-        return N;
-    }
-
-    public void setN(int n) {
-        N = n;
     }
 }
